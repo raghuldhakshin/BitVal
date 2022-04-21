@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NumberVerificationActivity"
+    android:background="@color/black"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntubold"
+        android:textColor="@color/white"
+        android:id="@+id/otpTextView"
+        android:text="OTP verification"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/enterMobileNumTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/otpTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/ubunturegular"
+        android:text="Enter your mobile number for OTP verification"
+        android:textColor="@color/white">
+
+    </TextView>
+
+
+
+    <EditText
+        android:id="@+id/otpET"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/enterMobileNumTV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@color/cardColorYellow"
+        android:fontFamily="@font/ubunturegular"
+        android:padding="7dp"
+        android:textColor="@color/black"
+        android:hint="Enter your OTP"
+        >
+
+    </EditText>
+
+    <Button
+        android:id="@+id/checkOtpBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check OTP and login"
+        android:layout_below="@+id/otpET"
+        android:background="@drawable/rounded_corners"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/ubunturegular"
+
+        >
+
+    </Button>
+
+</RelativeLayout>

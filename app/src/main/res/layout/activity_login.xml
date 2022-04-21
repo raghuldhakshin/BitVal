@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@color/black"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/loginAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/ubuntubold"
+            android:text="BitValue"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/white"></TextView>
+
+
+
+        <TextView
+            android:id="@+id/loginTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/ubuntubold"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:layout_below="@id/loginAppName"
+            android:textAlignment="center"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/loginCardView"
+            android:layout_width="404dp"
+            android:layout_height="241dp"
+            android:layout_below="@+id/loginTextView"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:elevation="10dp"
+            android:padding="10dp"
+            app:cardBackgroundColor="@color/cardColorYellow"
+            app:cardCornerRadius="2dp"
+
+
+            >
+
+            <TextView
+                android:id="@+id/EmailTVLog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/ubuntubold"
+                android:text="Email"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+
+
+                />
+
+            <EditText
+                android:id="@+id/EmailETLog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/EmailTV"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/inputs"
+                android:fontFamily="@font/ubunturegular"
+                android:hint="Enter your Email ID"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/PasswordTVLog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/EmailET"
+                android:layout_marginTop="130dp"
+                android:fontFamily="@font/ubuntubold"
+                android:text="Password"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+
+                />
+
+            <EditText
+                android:id="@+id/PasswordETLog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/PasswordTV"
+                android:layout_alignStart="@+id/loginCardView"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="170dp"
+                android:background="@drawable/inputs"
+                android:fontFamily="@font/ubunturegular"
+                android:hint="Enter your Password"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="15sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/loginCardView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/rounded_corners"
+            android:fontFamily="@font/ubuntubold"
+            android:text="Login"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+
+
+
+        <TextView
+            android:id="@+id/AccountTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Need an Account?"
+            android:textSize="12sp"
+            android:layout_below="@+id/loginBtn"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/cardColorYellow"
+            android:fontFamily="@font/ubuntubold"
+            android:textAlignment="center"
+
+
+            />
+
+        <Button
+            android:id="@+id/createAccTextLog"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/AccountTV"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_corners"
+            android:fontFamily="@font/ubuntubold"
+            android:gravity="center"
+            android:padding="7dp"
+            android:text="Create an Account"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+
+            />
+
+        <TextView
+            android:id="@+id/loginNumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/createAccTextLog"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/ubunturegular"
+            android:text="Login with a number?"
+            android:textColor="@color/white"
+            android:textSize="17sp">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/loginWithNumBtn"
+            android:layout_width="wrap_content"
+            android:padding="7dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/loginNumText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_corners"
+            android:fontFamily="@font/ubuntubold"
+            android:gravity="center"
+            android:text="Click here"
+            android:textColor="@color/black"
+            android:textSize="15sp">
+
+        </Button>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+</ScrollView>

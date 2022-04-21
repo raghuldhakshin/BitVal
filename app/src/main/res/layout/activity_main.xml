@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/black"
+    >
+
+
+    <TextView
+        android:id="@+id/bitTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubunturegular"
+        android:text="Bitcoin Value(USD)"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:visibility="gone"
+        >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/bitcoinPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:layout_below="@+id/bitTV"
+        android:textColor="@color/white"
+        android:fontFamily="@font/ubunturegular"
+        android:textSize="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/refreshBtn"
+        android:text="Refresh"
+        android:visibility="visible"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="190dp"
+        android:layout_below="@+id/bitcoinPrice"
+        android:fontFamily="@font/ubunturegular"
+        android:layout_height="wrap_content">
+    </Button>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mainProgressBar"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+
+        >
+
+    </ProgressBar>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/logOutBtn"
+        android:text="LogOut"
+        android:visibility="visible"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/refreshBtn"
+        android:fontFamily="@font/ubunturegular"
+        android:layout_height="wrap_content">
+    </Button>
+
+</RelativeLayout>
